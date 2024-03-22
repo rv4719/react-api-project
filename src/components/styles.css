@@ -1,4 +1,6 @@
-/*Estilos globais dos componentes*/
+/*
+O arquivo styles.css contém estilos globais e específicos de componentes.
+Os estilos globais definem o alinhamento de cabeçalhos (h1) e os estilos específicos de componentes estilizam os cartões de foto na lista, os controles de paginação e ordenação, etc*/
 
 h1 {
   text-align: center;

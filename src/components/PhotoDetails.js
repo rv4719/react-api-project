@@ -1,4 +1,8 @@
-/*Código para mostrar os detalhes da imagem selecionada*/
+/*
+   Este componente exibe os detalhes de uma foto selecionada.
+   Utiliza o Material-UI para renderizar componentes como `Container`, `Card`, `CardMedia`, `CardContent`, `Typography`, etc.
+   Recebe um objeto `photo` como propriedade e exibe seus detalhes, como título, ID e ID do álbum.
+*/
 
 import React from 'react';
 import { Container, Card, CardMedia, CardContent, Typography } from '@mui/material';

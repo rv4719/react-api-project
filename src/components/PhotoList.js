@@ -1,4 +1,10 @@
-/*Código que busca as imagens disponíveis*/
+/* - Este componente é responsável por exibir a lista de fotos.
+   - Utiliza o Material-UI para renderizar componentes como `Grid`, `Card`, `Select`, `MenuItem`, etc.
+   - Utiliza estados para controlar o número de itens por página, a página atual e o critério de ordenação.
+   - Usa o hook `useEffect` para buscar fotos da API quando os estados relevantes mudam.
+   - Fornece controles para selecionar o número de itens por página e o critério de ordenação.
+   - Cada foto é representada por um cartão clicável que permite visualizar os detalhes da foto.
+*/
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';

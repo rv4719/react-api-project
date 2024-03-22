@@ -1,3 +1,7 @@
+/*
+
+*/
+
 import React, { useState } from 'react';
 import PhotoList from './components/PhotoList';
 import PhotoDetails from './components/PhotoDetails';
