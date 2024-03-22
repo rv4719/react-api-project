@@ -1,70 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Pré-requisitos:
 
-In the project directory, you can run:
+1. **Node.js e npm**: Certifique-se de que o Node.js e o npm estão instalados na máquina.
 
-### `npm start`
+###   Passo Opcional: Clonar este repositório 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Passo 1: Configuração do Ambiente de Desenvolvimento
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Abra o terminal ou prompt de comando.
 
-### `npm test`
+2. Navegue até o diretório onde deseja criar o projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Passo 2: Inicialização do Projeto
 
-### `npm run build`
+1. Execute o seguinte comando para criar um novo aplicativo React:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npx create-react-app nome-do-seu-app
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Substitua "nome-do-seu-app" pelo nome que deseja dar ao seu aplicativo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Após a criação do projeto, navegue até o diretório do projeto:
 
-### `npm run eject`
+    ```bash
+    cd nome-do-seu-app
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Passo 3: Adição de Dependências
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Como o projeto utiliza o Material-UI e o Axios, você precisa instalá-los. Execute o seguinte comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm install @mui/material @emotion/react @emotion/styled axios
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    Isso instalará o Material-UI, bem como as dependências relacionadas ao estilo.
 
-## Learn More
+### Passo 4: Criação dos Componentes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. No diretório `src` do seu projeto, crie dois arquivos: `PhotoList.js` e `PhotoDetails.js`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Copie o código fornecido para `PhotoList.js` e `PhotoDetails.js`, respectivamente.
 
-### Code Splitting
+3. Crie um arquivo chamado `styles.css` no diretório `src` e cole o código CSS fornecido nele.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Passo 5: Adaptação do Código
 
-### Analyzing the Bundle Size
+1. No arquivo `App.js`, remova o conteúdo existente e substitua-o pelo seguinte código:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```jsx
+    import React from 'react';
+    import PhotoList from './PhotoList';
+    import './App.css';
 
-### Making a Progressive Web App
+    function App() {
+      return (
+        <div className="App">
+          <header className="App-header">
+            <h1>Galeria de Fotos</h1>
+          </header>
+          <main>
+            <PhotoList />
+          </main>
+        </div>
+      );
+    }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    export default App;
+    ```
 
-### Advanced Configuration
+### Passo 6: Execução do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. No terminal, dentro do diretório do projeto, execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
-### Deployment
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Agora, você pode abrir seu navegador e acessar `http://localhost:3000` para visualizar o aplicativo em execução.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
