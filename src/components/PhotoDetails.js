@@ -1,3 +1,5 @@
+/*Código para mostrar os detalhes da imagem selecionada*/
+
 import React from 'react';
 import { Container, Card, CardMedia, CardContent, Typography } from '@mui/material';
 import './styles.css';

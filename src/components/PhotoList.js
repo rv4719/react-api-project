@@ -1,3 +1,5 @@
+/*Código que busca as imagens disponíveis*/
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Grid, Card, CardMedia, CardContent, Typography, Select, MenuItem } from '@mui/material';
