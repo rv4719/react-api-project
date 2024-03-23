@@ -2,9 +2,9 @@
 Principais Funcionalidades:
 - Exibição de Lista de Fotos:
 O componente PhotoList exibe uma lista de fotos em cartões clicáveis.
-O usuário pode selecionar o número de fotos exibidas por página e a ordenação das fotos.
-Paginação e Ordenação:
+O usuário pode selecionar o número de fotos exibidas por página e a ordenação das fotos, bem como efetuar busca.
 
+Paginação e Ordenação:
 O usuário pode selecionar o número de itens por página entre várias opções.
 O usuário pode ordenar as fotos por título, ID ou ID do álbum.
 
@@ -13,7 +13,7 @@ Ao clicar em uma foto, o usuário pode ver seus detalhes, como título, ID e ID 
 Decisões de Design:
 
 Usabilidade:
-A interface fornece controles claros para selecionar o número de itens por página e a ordenação das fotos, melhorando a usabilidade do aplicativo.
+A interface fornece controles claros para efetuar busca de imagem, selecionar o número de itens por página e a ordenação das fotos, melhorando a usabilidade do aplicativo.
 
 Estilo Visual:
 O Material-UI é utilizado para criar uma interface visualmente atraente e consistente.
