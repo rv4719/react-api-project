@@ -12,6 +12,10 @@ h1 {
   padding: 20px;
 }
 
+.photo-details-container {
+  padding: 20px;
+}
+
 .photo-card {
   border-radius: 10px;
   overflow: hidden;
